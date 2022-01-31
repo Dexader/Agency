@@ -1,0 +1,57 @@
+.subscribe {
+	padding: 136px 0;
+	background: url('../img/subscribe/pexels-lukas-574069.jpg') center no-repeat;
+	background-size: cover;
+
+		&__top {
+			text-align: center;
+		}
+
+		&__title {
+			margin-bottom: 23px;
+			letter-spacing: 0.025em;
+			color: #fff;
+			text-transform: none;
+		}
+
+		&__text {
+			margin-bottom: 62px;
+			color: #fff;
+		}
+
+		&__form {
+		}
+}
+.form {
+
+		&__body {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__input {
+			width: 33.06%;
+			margin-right: 22px;
+			padding: 33px 0 32px 36px;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+
+		&__input input {
+			width: 100%;
+		}
+
+		input::placeholder {
+			font-size: 16px;
+			opacity: 0.7;
+			letter-spacing: 0.025em;
+			color: #2c2c2c;
+		}
+
+		&__button {
+			padding: 0 69px 0 70px;
+			text-transform: uppercase;
+			font-size: 18px;
+		}
+}

@@ -1,0 +1,65 @@
+.service {
+	padding-top: 108px;
+	padding-bottom: 1px;
+
+		&__inner {
+			display: flex;
+			flex-wrap: wrap;
+			padding-bottom: 57px;
+			border-bottom: 2px solid #ececec;
+		}
+
+		&__panel {
+			width: 50%;
+		}
+
+		&__title {
+			margin-bottom: 30px;
+			line-height: 1.309;
+		}
+
+		&__text {
+			margin-bottom: 53px;
+			max-width: 509px;
+			opacity: 1;
+		}
+
+		&__button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 227px;
+			height: 55px;
+			font-size: 18.2px;
+			cursor: pointer;
+		}
+
+		&__items {
+			display: flex;
+			flex-wrap: wrap;
+			width: 50%;
+		}
+
+		&__item {
+			width: 50%;
+			margin-bottom: 12px;
+		}
+
+		&__icon {
+			margin-bottom: 30px;
+		}
+
+		&__name {
+			margin-bottom: 17px;
+			opacity: 0.7;
+			font-size: 24px;
+			line-height: 1.2;
+			font-weight: 600;
+			letter-spacing: 0.01em;
+			color: #000000;
+		}
+
+		&__description {
+			max-width: 271px;
+		}
+}

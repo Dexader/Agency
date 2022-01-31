@@ -1,0 +1,40 @@
+.footer {
+	display: flex;
+	height: 111px;
+	padding: 47px 0;
+	background-color: #313030;
+
+		&__inner {
+			display: flex;
+			margin: 0 auto;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__copyright {
+			color: #b8b8b8;
+		}
+
+		&__social {
+		}
+
+		&__list {
+			display: flex;
+		}
+
+		&__ {
+
+			&_list-item {
+				margin-right: 17px;
+			}
+
+			&_list-item:last-child {
+				margin-right: 0;
+			}
+
+			&_list-item img {
+				display: block;
+				width: 100%;
+			}
+		}
+}

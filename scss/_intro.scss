@@ -1,0 +1,53 @@
+.intro {
+	padding: 123px 0;
+	background-color: #f6f2f2;
+	position: relative;
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__read {
+		width: 50%;
+		padding-top: 88px;
+	}
+
+	&__title {
+		margin-bottom: 17px;
+		font-size: 60px;
+		line-height: 72px;
+		font-weight: 800;
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+	}
+
+	&__text {
+		margin-right: 112px;
+		margin-bottom: 52px;
+	}
+
+	&__button {
+		width: 227px;
+		height: 55px;
+		font-size: 18.2px;
+	}
+
+	&__video {
+		width: 50%;
+		padding-top: 98px;
+		padding-left: 78px;
+		justify-content: center;
+	}
+}
+.video {
+	&__item {
+		max-width: 551px;
+		max-height: 356px;
+	}
+
+	& video {
+		object-fit: cover;
+		width: 100%;
+	}
+}
