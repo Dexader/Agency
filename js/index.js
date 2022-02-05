@@ -8,7 +8,8 @@ $(function () {
 	let scrollPos = $(window).scrollTop();
 	let nav = $("#menu");
 	let navToggle = $("#navToggle");
-	let wid = $(window).width();
+
+	//Header fixed
 
 	checkScroll(scrollPos, introH);
 
@@ -27,7 +28,7 @@ $(function () {
 		}
 	}
 	
-	
+	//Active
 
 	var sections = $('section')
 		
@@ -50,6 +51,8 @@ $(function () {
 		});
 	});
 
+	//Smooth scroll
+
 	nav.find('a').on('click', function () {
 		var $el = $(this)
 			, id = $el.attr('href');
@@ -61,6 +64,8 @@ $(function () {
 		return false;
 	});
 
+	//Toggle menu
+
 	navToggle.on('click', function () {
 		if ($(this).hasClass('menu__show')) {
 			$(this).removeClass('menu__show');
@@ -71,21 +76,28 @@ $(function () {
 		}
 	});
 
-	if ($(window).width() < 768) { menuHandler(); }
+	//Filter
 
-	$(window).on('resize', function () {
-		if ($(window).width() < 768) {
-			menuHandler();
+	let filter = $("[data-filter]");
+
+	filter.on("click", function (event) {
+		event.preventDefault();
+
+		let cat = $(this).data('filter');
+
+		if (cat == 'all') {
+			$("[data-cat]").removeClass("hide");
+		} else {
+			$("[data-cat]").each(function () {
+				let workCat = $(this).data('cat');
+
+				if (workCat != cat) {
+					$(this).addClass('hide');
+				} else {
+					$(this).removeClass('hide');
+				}
+			});
 		}
 	});
 
-	let menuHandler = function () {
-		$(document).click(function (e) {
-			if (!navToggle.is(e.target) && navToggle.has(e.target).length === 0) {
-				nav.slideUp();
-				navToggle.removeClass('menu__show');
-			};
-		});
-
-	}
 });

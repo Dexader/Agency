@@ -31,9 +31,11 @@
 		}
 
 	}
+
 }
 
 .menu {
+	display: block;
 	
 
 		&__list {
@@ -59,9 +61,14 @@
 			transition: all .25s ease;
 		}
 
+		&__hide {
+			color: #ccc;
+		}
+
 		.active {
 			background-color: $red;
 		}
+
 
 		&__item:hover a {
 			background-color: $red;
@@ -105,6 +112,7 @@
 			font-size: 0;
     		color: transparent;
 			position: relative;
+			z-index: 30;
 		}
 
 		&__item:before,
@@ -134,3 +142,5 @@
 
 		}
 }
+
+

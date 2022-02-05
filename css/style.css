@@ -148,6 +148,10 @@ textarea:focus {
           box-shadow: 2px 2px 17px rgba(0, 0, 0, 0.6);
 }
 
+.hide {
+  display: none;
+}
+
 .header {
   margin-top: 29px;
   margin-left: -50%;
@@ -186,6 +190,10 @@ textarea:focus {
   }
 }
 
+.menu {
+  display: block;
+}
+
 .menu__list {
   width: 100%;
 }
@@ -209,6 +217,10 @@ textarea:focus {
   -webkit-transition: all .25s ease;
   -o-transition: all .25s ease;
   transition: all .25s ease;
+}
+
+.menu__hide {
+  color: #ccc;
 }
 
 .menu .active {
@@ -259,6 +271,7 @@ textarea:focus {
   font-size: 0;
   color: transparent;
   position: relative;
+  z-index: 30;
 }
 
 .burger__item:before, .burger__item:after {

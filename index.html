@@ -17,16 +17,17 @@
 			<div class="header__inner">
 				<nav class="menu" id="menu">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="#intro"">home</a></li>
-						<li class="menu__item"><a href="#portfolio"">portfolio</a></li>
-						<li class="menu__item"><a href="#team">about us</a></li>
-						<li class="menu__item"><a href="#contact">contact</a></li>
+						<li class="menu__item"><a class="navItem" href="#intro">home</a></li>
+						<li class="menu__item"><a class="navItem" href="#portfolio">portfolio</a></li>
+						<li class="menu__item"><a class="navItem" href="#team">about us</a></li>
+						<li class="menu__item"><a class="navItem" href="#contact">contact</a></li>
 					</ul>
 				</nav>
 
 				<button class="burger" id="navToggle">
 					<span class="burger__item"></span>
 				</button>
+
 			</div>
 
 		</div>
@@ -143,49 +144,49 @@
 
 				<div class="portfolio__categories">
 					<div class="portfolio__types">
-						<div class="portfolio__name">all</div>
-						<div class="portfolio__name">print template</div>
-						<div class="portfolio__name">web template</div>
-						<div class="portfolio__name">user interface</div>
-						<div class="portfolio__name">mock-up</div>
+						<div class="portfolio__name" data-filter="all">all</div>
+						<div class="portfolio__name" data-filter="print">print template</div>
+						<div class="portfolio__name" data-filter="web">web template</div>
+						<div class="portfolio__name" data-filter="interface">user interface</div>
+						<div class="portfolio__name" data-filter="mock-up">mock-up</div>
 					</div>
 					<div class="portfolio__images">
-						<picture class="portfolio__image">
+						<picture class="portfolio__image" data-cat="web">
 							<source srcset="img/portfolio/pexels-anna-nekrashevich.webp" type="image/webp">
 							<source srcset="img/portfolio/pexels-anna-nekrashevich.png" type="image/png">
 							<img src="img/portfolio/pexels-anna-nekrashevich.png" alt="">
 						</picture>
-						<picture class="portfolio__image">
+						<picture class="portfolio__image" data-cat="interface">
 							<source srcset="img/portfolio/pexels-deepanker-verma.webp" type="image/webp">
 							<source srcset="img/portfolio/pexels-deepanker-verma.png" type="image/png">
 							<img src="img/portfolio/pexels-deepanker-verma.png" alt="">
 						</picture>
-						<picture class="portfolio__image">
+						<picture class="portfolio__image" data-cat="mock-up">
 							<source srcset="img/portfolio/pexels-kindel-media.webp" type="image/webp">
 							<source srcset="img/portfolio/pexels-kindel-media.png" type="image/png">
 							<img src="img/portfolio/pexels-kindel-media.png" alt="">
 						</picture>
-						<picture class="portfolio__image">
+						<picture class="portfolio__image" data-cat="print">
 							<source srcset="img/portfolio/pexels-kira-schwarz.webp" type="image/webp">
 							<source srcset="img/portfolio/pexels-kira-schwarz.png" type="image/png">
 							<img src="img/portfolio/pexels-kira-schwarz.png" alt="">
 						</picture>
-						<picture class="portfolio__image">
+						<picture class="portfolio__image" data-cat="print">
 							<source srcset="img/portfolio/pexels-larissa-farber.webp" type="image/webp">
 							<source srcset="img/portfolio/pexels-larissa-farber.png" type="image/png">
 							<img src="img/portfolio/pexels-larissa-farber.png" alt="">
 						</picture>
-						<picture class="portfolio__image">
+						<picture class="portfolio__image" data-cat="web">
 							<source srcset="img/portfolio/pexels-pixabay.webp" type="image/webp">
 							<source srcset="img/portfolio/pexels-pixabay.png" type="image/png">
 							<img src="img/portfolio/pexels-pixabay.png" alt="">
 						</picture>
-						<picture class="portfolio__image">
+						<picture class="portfolio__image" data-cat="mock-up">
 							<source srcset="img/portfolio/pexels-rodion-kutsaiev.webp" type="image/webp">
 							<source srcset="img/portfolio/pexels-rodion-kutsaiev.png" type="image/png">
 							<img src="img/portfolio/pexels-rodion-kutsaiev.png" alt="">
 						</picture>
-						<picture class="portfolio__image">
+						<picture class="portfolio__image" data-cat="interface">
 							<source srcset="img/portfolio/pexels-tranmautritam.webp" type="image/webp">
 							<source srcset="img/portfolio/pexels-tranmautritam.png" type="image/png">
 							<img src="img/portfolio/pexels-tranmautritam.png" alt="">
