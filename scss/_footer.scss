@@ -4,18 +4,43 @@
 	padding: 47px 0;
 	background-color: #313030;
 
+	@include _425 {
+		padding: 17px 0;
+		height: 91px;
+	}
+
 		&__inner {
 			display: flex;
 			margin: 0 auto;
 			justify-content: space-between;
 			align-items: center;
+
+			@include _425 {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
 		}
 
 		&__copyright {
 			color: #b8b8b8;
+
+			@include _425 {
+				margin-bottom: 10px;
+			}
+
+			@include _375 {
+				font-size: 13px;
+			}
 		}
 
 		&__social {
+
+			@include _425 {
+				display: flex;
+				justify-content: center;
+				width: 100%;
+			}
+
 		}
 
 		&__list {

@@ -76,7 +76,8 @@ $(function () {
 		}
 	});
 
-	//Filter
+	
+		//Filter
 
 	let filter = $("[data-filter]");
 

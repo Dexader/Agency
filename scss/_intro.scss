@@ -3,6 +3,18 @@
 	background-color: #f6f2f2;
 	position: relative;
 
+	@include _991 {
+		padding: 70px 0;
+	}
+
+	@include _768 {
+			padding: 50px 0;
+		}
+
+	@include _375 {
+			padding: 30px 0;
+		}
+
 	&__inner {
 		display: flex;
 		flex-wrap: wrap;
@@ -11,6 +23,17 @@
 	&__read {
 		width: 50%;
 		padding-top: 88px;
+
+		@include _991 {
+			text-align: center;
+		}
+
+		@include _768 {
+			width: 100%;
+			margin-bottom: 30px;
+			padding-top: 50px;
+			text-align: center;
+		}
 	}
 
 	&__title {
@@ -20,17 +43,36 @@
 		font-weight: 800;
 		text-transform: uppercase;
 		letter-spacing: 0.025em;
+
+		@include _991 {
+			font-size: 40px;
+			line-height: 1.2;
+		}
+
+		@include _375 {
+			font-size: 30px;
+		}
 	}
 
 	&__text {
 		margin-right: 112px;
 		margin-bottom: 52px;
+
+		@include _991 {
+			margin: 0 auto 20px;
+		}
 	}
 
 	&__button {
 		width: 227px;
 		height: 55px;
 		font-size: 18.2px;
+
+		@include _375 {
+			width: 187px;
+			height: 45px;
+			font-size: 16px;
+		}
 	}
 
 	&__video {
@@ -38,12 +80,25 @@
 		padding-top: 98px;
 		padding-left: 78px;
 		justify-content: center;
+
+		@include _991 {
+			padding-left: 1%;
+		}
+
+		@include _768 {
+			width: 100%;
+			padding: 0;
+		}
 	}
 }
 .video {
 	&__item {
 		max-width: 551px;
 		max-height: 356px;
+
+		@include _768 {
+			max-width: 100%;
+		}
 	}
 
 	& video {

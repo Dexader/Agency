@@ -1,19 +1,48 @@
 .team {
 	padding: 24px 0;
 
+	@include _768 {
+		padding: 10px 0;
+	}
+
 		&__top {
 			max-width: 446px;
 			margin-bottom: 30px;
+
+			@include _1024 {
+				display: flex;
+				flex-wrap: wrap;
+				max-width: 100%;
+				margin-bottom: 15px;
+				justify-content: center;
+				text-align: center;
+			}
+
+			@include _768 {
+				margin-bottom: 5px;
+			}
 		}
 
 		&__title {
 			margin-bottom: 25px;
 			margin-left: -10px;
 			line-height: 1.2;
+
+			@include _768 {
+				margin-bottom: 5px;
+			}
 		}
 
 		&__text {
 			margin-bottom: 70px;
+
+			@include _1024 {
+				margin-bottom: 40px;
+			}
+
+			@include _768 {
+				margin-bottom: 25px;
+			}
 		}
 
 		&__text::after {
@@ -23,12 +52,29 @@
 			width: 132px;
 			height: 3px;
 			background-color: $red;
+
+			@include _1024 {
+				margin: 29px auto;;
+			}
 		}
 
 		&__people {
 			display: flex;
 			flex-wrap: wrap;
 			position: relative;
+
+			@include _1024 {
+				position: static;
+			}
+
+			@include _991 {
+				text-align: center;
+			}
+
+			@include _768 {
+				position: relative;
+				margin: 0 -10px;
+			}
 		}
 
 		&__info {
@@ -36,6 +82,21 @@
 			position: absolute;
 			top: 0;
 			right: 18.15%;
+
+			@include _1024 {
+				position: static;
+			}
+
+			@include _991 {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+			}
+
+			@include _768 {
+				width: 100%;
+			}
 		}
 
 		&__name {
@@ -46,14 +107,35 @@
 			text-transform: uppercase;
 			letter-spacing: 0.01em;
 			color: #000000;
+
+			@include _991 {
+				margin-bottom: 0;
+			}
+
+			@include _768 {
+				margin-bottom: 15px;
+				font-size: 22px;
+			}
 		}
 
 		&__slills {
 			margin-bottom: 37px;
+
+			@include _991 {
+				margin-bottom: 0;
+			}
+
+			@include _768 {
+				margin-bottom: 15px;
+			}
 		}
 
 		&__social {
 			display: flex;
+
+			@include _991 {
+				justify-content: space-around;
+			}
 		}
 
 		&__social-item {
@@ -64,6 +146,14 @@
 			letter-spacing: 0.05em;
 			color: #000;
 			transition: all .2s ease;
+
+			@include _425 {
+				font-size: 15px;
+			}
+
+			@include _320 {
+				font-size: 12px;
+			}
 		}
 
 		&__social-item:hover {
@@ -76,6 +166,25 @@
 			align-items: end;
 			margin: 0 9px;
 			position: relative;
+
+			@include _1024 {
+				margin: 15px 24px 0;
+				justify-content: space-between;
+			}
+
+			@include _991 {
+				margin: 15px 20px 0;
+			}
+
+			@include _768 {
+				margin: 15px 0;
+				padding: 0 10px;
+				width: 50%;
+			}
+
+			@include _425{
+				width: 100%;
+			}
 		}
 
 		&__photo img {
@@ -96,6 +205,7 @@
 			letter-spacing: 0.01em;
 			color: #ffffff;
 			position: absolute;
+
 		}
 
 		&__photo:hover span {
@@ -105,5 +215,31 @@
 		.big {
 			margin-left: 0;
 			margin-right: 64px;
+
+			& img {
+				height: 138px;
+				object-fit: cover;
+
+				@include _425 {
+					height: 429px;
+				}
+			}
+
+			@include _1024 {
+				margin-right: 4px;
+				width: 127px;
+			}
+
+			@include _768 {
+				display: none;
+			}
+
+			@include _425 {
+				display: block;
+				width: 100%;
+			}
 		}
+
+
+
 }

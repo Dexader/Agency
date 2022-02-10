@@ -18,7 +18,7 @@
 		margin-top: 10px;
 	}
 
-	@media (max-width: 768px) {
+	@include _768 {
 
 		margin-top: 19px;
 
@@ -61,10 +61,6 @@
 			transition: all .25s ease;
 		}
 
-		&__hide {
-			color: #ccc;
-		}
-
 		.active {
 			background-color: $red;
 		}
@@ -74,10 +70,9 @@
 			background-color: $red;
 		}
 
-		@media (max-width: 768px) {
+		@include _768 {
 			
 				display: none;
-        		//max-width: 95.9%;
 				width: 100%;
         		flex-direction: column;
 				background-color: #000;
@@ -135,7 +130,7 @@
     		bottom: -8px;
 		}
 
-		@media (max-width: 768px) {
+		@include _768 {
 
 			display: block;
 			height: 50px;

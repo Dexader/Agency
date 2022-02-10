@@ -2,26 +2,77 @@
 	padding-top: 108px;
 	padding-bottom: 1px;
 
+	@include _1024 {
+		padding-top: 80px;
+	}
+
+	@include _768 {
+				padding-top: 50px;
+			}
+
+			@include _425 {
+				padding-top: 35px;
+			}
+
 		&__inner {
 			display: flex;
 			flex-wrap: wrap;
 			padding-bottom: 57px;
 			border-bottom: 2px solid #ececec;
+
+			@include _1024 {
+				padding-bottom: 17px;
+			}
 		}
 
 		&__panel {
 			width: 50%;
+
+			@include _768 {
+				display: flex;
+				flex-wrap: wrap;
+				margin-bottom: 35px;
+				justify-content: center;
+				width: 100%;
+				text-align: center;
+			}
 		}
 
 		&__title {
 			margin-bottom: 30px;
 			line-height: 1.309;
+
+			@include _1024 {
+				font-size: 36px;
+			}
+
+			@include _425 {
+				font-size: 30px;
+				margin-bottom: 20px;
+			}
+
+			@include _375 {
+				font-size: 25px;
+			}
 		}
 
 		&__text {
 			margin-bottom: 53px;
 			max-width: 509px;
 			opacity: 1;
+
+			@include _991 {
+				font-size: 13px;
+			}
+
+			@include _768 {
+				max-width: 100%;
+			}
+
+
+			@include _425 {
+				margin-bottom: 20px;
+			}
 		}
 
 		&__button {
@@ -32,17 +83,36 @@
 			height: 55px;
 			font-size: 18.2px;
 			cursor: pointer;
+
+			@include _425 {
+				width: 187px;
+				height: 45px;
+				font-size: 16px;
+			}
 		}
 
 		&__items {
 			display: flex;
 			flex-wrap: wrap;
 			width: 50%;
+
+			@include _768 {
+				width: 100%;
+			}
 		}
 
 		&__item {
 			width: 50%;
 			margin-bottom: 12px;
+
+			@include _768 {
+				margin-bottom: 20px;
+			}
+
+			@include _425 {
+				width: 100%;
+				text-align: center;
+			}
 		}
 
 		&__icon {
@@ -57,9 +127,21 @@
 			font-weight: 600;
 			letter-spacing: 0.01em;
 			color: #000000;
+
+			@include _375 {
+				font-size: 22px;
+			}
 		}
 
 		&__description {
 			max-width: 271px;
+
+			@include _1024 {
+				font-size: 13px;
+			}
+
+			@include _768 {
+				max-width: 100%;
+			}
 		}
 }

@@ -1,6 +1,14 @@
 .portfolio {
 	padding: 106px 0;
 
+	@include _991 {
+		padding: 56px 0;
+	}
+
+	@include _425 {
+		padding: 36px 0;
+	}
+
 		&__top {
 			max-width: 504px;
 			margin: 0 auto;
@@ -13,6 +21,14 @@
 
 		&__text {
 			margin-bottom: 85px;
+
+			@include _991 {
+				margin-bottom: 65px;
+			}
+
+			@include _425 {
+				margin-bottom: 45px;
+			}
 		}
 
 		&__text::after {
@@ -24,15 +40,21 @@
 				background-color: $red;
 			}
 
-		&__categories {
-		}
-
 		&__types {
 			display: flex;
 			width: 100%;
 			margin-bottom: 66px;
 			padding-left: 155px;
 			padding-right: 106px;
+
+			@include _1024 {
+				padding: 0;
+			}
+
+			@include _425 {
+				margin-bottom: 36px;
+				text-align: center;
+			}
 		}
 
 		&__name {
@@ -45,6 +67,22 @@
 			opacity: 0.7;
 			cursor: pointer;
 			transition: all .2s ease;
+
+			@include _991 {
+				display: flex;
+				justify-content: space-between;
+				font-size: 18px;
+			}
+
+			@include _425 {
+				padding: 0 8px;
+				font-size: 14px;
+			}
+
+			@include _320{
+				padding: 0 3px;
+				font-size: 12px;
+			}
 		}
 
 		&__name:hover {
@@ -63,6 +101,20 @@
 			overflow: hidden;
 			margin-bottom: 19px;
 			padding: 0 10px;
+
+			@include _1024 {
+				padding: 0 5px;
+				margin-bottom: 12px;
+			}
+
+			@include _768 {
+				width: 50%;
+			}
+
+			@include _425 {
+				width: 100%;
+				margin-bottom: 6px;
+			}
 		}
 
 		&__image img {
